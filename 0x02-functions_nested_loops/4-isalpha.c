@@ -5,11 +5,11 @@
  *
  * Description: A function that checks for alphabetic character.
  *
- * @i: The integer value it recieves
+ * @c: The integer value it recieves
  *
  * Return: 0
  */
-int _isalpha(int i)
+int _isalpha(int c)
 {
 	char minalpha, maxalpha;
 
@@ -17,7 +17,7 @@ int _isalpha(int i)
 	{
 		for (maxalpha = 'A'; maxalpha <= 'Z'; maxalpha++)
 		{
-			if ((minalpha == i) || (maxalpha == i))
+			if ((minalpha == c) || (maxalpha == c))
 			{
 				return (1);
 			}
