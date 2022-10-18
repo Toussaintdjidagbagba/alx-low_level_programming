@@ -7,40 +7,40 @@
  */
 void jack_bauer(void)
 {
-	int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
+	int ht, ho, mt, mo, hm;
 
-	hours_max = 58;
-	hours_tens = '0';
-	while (hours_tens < '3')
+	hm = 58;
+	ht = '0';
+	while (ht < '3')
 	{
-		if (hours_tens == '2')
+		if (ht == '2')
 		{
-			hours_max = '4';
+			hm = '4';
 		}
-		hours_ones = '0';
-		while (hours_ones < hours_max)
+		ho = '0';
+		while (ho < hm)
 		{
-			minutes_tens = '0';
-			while (minutes_tens < '6')
+			mt = '0';
+			while (mt < '6')
 			{
-				minutes_ones = '0';
-				while (minutes_ones < 58)
+				mo = '0';
+				while (mo < 58)
 				{
-					_putchar(hours_tens);
-					_putchar(hours_ones);
+					_putchar(ht);
+					_putchar(ho);
 					_putchar(':');
-					_putchar(minutes_tens);
-					_putchar(minutes_ones);
+					_putchar(mt);
+					_putchar(mo);
 					_putchar('\n');
-					minutes_ones++;
+					mo++;
 				}
-				minutes_ones = '0';
-				minutes_tens++;
+				mo = '0';
+				mt++;
 			}
-			minutes_tens = '0';
-			hours_ones++;
+			mt = '0';
+			ho++;
 		}
-		hours_ones = '0';
-		hours_tens++;
+		ho = '0';
+		ht++;
 	}
 }
