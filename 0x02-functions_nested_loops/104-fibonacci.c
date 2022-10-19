@@ -29,7 +29,7 @@ int _length(int num)
  */
 int main(void)
 {
-	unsigned long f1 = 1, f2 = 2, tmp, mx = 100000000, _f1 = 0, _f2 = 0, _temp = 0;
+	unsigned long f1 = 1, f2 = 2, tmp, mx = 100000000, _f1 = 0, _f2 = 0, _tmp = 0;
 	short int i = 1, initi;
 
 	while (i <= 98)
@@ -45,11 +45,11 @@ int main(void)
 		printf("%lu", f1);
 
 		tmp = (f1 + f2) % mx;
-		_temp = _f1 + _f2 + (f1 + f2) / mx;
+		_tmp = _f1 + _f2 + (f1 + f2) / mx;
 		f1 = f2;
 		_f1 = _f2;
 		f2 = tmp;
-		_f2 = _temp;
+		_f2 = _tmp;
 
 		if (i != 98)
 			printf(", ");
