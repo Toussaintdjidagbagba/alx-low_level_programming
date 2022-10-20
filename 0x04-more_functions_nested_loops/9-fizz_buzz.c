@@ -3,8 +3,6 @@
 
 /**
  * main - FizzBuzz
- *
- * Description: prints the numbers 1 - 100 
  * Return: always 0
  */
 int main(void)
