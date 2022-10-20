@@ -2,8 +2,8 @@
 
 /**
  * print_triangle - prints a triangle
- * @size: integer size 
- * Return: always void
+ * @size: integer  value size 
+ * Return: void
  */
 void print_triangle(int size)
 {
@@ -22,4 +22,5 @@ void print_triangle(int size)
 		}
 		_putchar('\n');
 	}
+
 }
