@@ -12,12 +12,12 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int il = 0, il2 = 0, p = 0;
 
-	while (*(dest + il) != '\0' && p < n)
+	while (*(dest + il) != '\0')
 	{
 		il++;
 	}
 
-	while (il2 >= 0)
+	while (il2 >= 0 && p < n)
 	{
 		*(dest + il) = *(src + il2);
 		if (*(src + il2) == '\0')
