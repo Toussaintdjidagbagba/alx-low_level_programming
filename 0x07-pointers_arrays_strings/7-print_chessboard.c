@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* print_chessboard - Prints chessboard
+* print_chessboard - Prints chess board
 *
-* @a: Double pointer
+* @a: Double array
 *
 * Return: 0
 */
