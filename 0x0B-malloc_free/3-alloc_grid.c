@@ -7,7 +7,7 @@
 *
 * @height: columns of the 2D array
 *
-* Return: Pointer to a 2 dimenstional array of integers or If width or 
+* Return: Pointer to a 2 dimenstional array of integers or If width or
 * height is 0 or negative, return NULL
 */
 
