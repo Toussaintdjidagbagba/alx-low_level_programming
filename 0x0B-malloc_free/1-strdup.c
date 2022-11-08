@@ -5,7 +5,7 @@
 *
 * @str: The string to be copied
 *
-* Return: (success) the _strdup function returns a pointer 
+* Return: (success) the _strdup function returns a pointer
 * to the duplicated string
 * OR NULL if @str is empty (FAILURE) OR
 * NUL if insufficient memory was available
