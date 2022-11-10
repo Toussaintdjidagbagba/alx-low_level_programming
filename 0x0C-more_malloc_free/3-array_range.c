@@ -2,8 +2,8 @@
 
 /**
 * array_range - creates an array of integers, ordered from @min to @max
-* @min: first and minimum value 
-* @max: last and maximum value 
+* @min: first and minimum value
+* @max: last and maximum value
 * Return: pointer to the newly created array (SUCCESS) or
 * NULL if @min > @max (FAILURE) or
 * NULL if insufficient memory was available (FAILURE)
