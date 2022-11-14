@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include "dog.h"
 
-int _strLen(char *str);
-void fillMem(char *str, int strLen, char *dest);
+int _leng(char *str);
+void CpyM(char *str, int strLen, char *dest);
 
 /**
 * new_dog - Creates a new dog
@@ -27,7 +27,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (n_dog == NULL)
 		return (NULL);
 
-	nameLen = _strLen(name);
+	nameLen = _leng(name);
 	n_dog->name = malloc(sizeof(char) * nameLen + 1);
 
 	if (n_dog->name == NULL)
@@ -36,9 +36,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	fillMem(name, nameLen, n_dog->name);
+	CpyM(name, nameLen, n_dog->name);
 
-	ownerLen = _strLen(owner);
+	ownerLen = _leng(owner);
 	n_dog->owner = malloc(sizeof(char) * ownerLen + 1);
 
 	if (n_dog->owner == NULL)
@@ -48,7 +48,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	fillMem(owner, ownerLen, n_dog->owner);
+	CpyM(owner, ownerLen, n_dog->owner);
 
 	n_dog->age = age;
 
@@ -56,14 +56,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 }
 
 /**
-* _strLen - Get length of a string
+* _leng - Get length of a string
 *
 * @str: A string
 *
 * Return: Length of string
 */
 
-int _strLen(char *str)
+int _leng(char *str)
 {
 	int i = 0;
 
@@ -74,7 +74,7 @@ int _strLen(char *str)
 }
 
 /**
-* fillMem - Copy string literal to allocated memory
+* CpyM - Copy string literal to allocated memory
 *
 * @str: String literal
 *
@@ -83,7 +83,7 @@ int _strLen(char *str)
 * @dest: The allocated memory
 */
 
-void fillMem(char *str, int strLen, char *dest)
+void CpyM(char *str, int strLen, char *dest)
 {
 	int i;
 
