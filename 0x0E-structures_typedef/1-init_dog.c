@@ -2,11 +2,11 @@
 #include "dog.h"
 
 /**
-* init_dog - Initializes the dog struct variables
-*
-* @name: String literal
+* init_dog - Init the dog struct variables
 *
 * @d: Pointer to struct dog
+*
+* @name: String literal
 *
 * @age: Age of the dog
 *
