@@ -10,7 +10,7 @@ void print_float(va_list *arg);
 void print_string(va_list *arg);
 
 /**
-* print_all - prints anything(any data type)
+* print_all - prints anything
 * @format: pointer to string of data format types
 */
 
