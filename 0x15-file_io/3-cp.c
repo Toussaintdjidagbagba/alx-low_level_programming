@@ -1,5 +1,8 @@
 #include "main.h"
 
+int copy(char *file_from, char *file_to);
+void close_file(int fd);
+
 /**
 * main - calls copy function
 *
