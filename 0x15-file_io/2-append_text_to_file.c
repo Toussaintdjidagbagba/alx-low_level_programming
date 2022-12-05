@@ -11,11 +11,11 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int nf;
+	int nfa;
 
-	nf = open(filename, O_RDWR | O_APPEND);
+	nfa = open(filename, O_RDWR | O_APPEND);
 
-	if(nf == -1)
+	if(nfa == -1)
 	{
 		return (-1);
 	}
@@ -25,7 +25,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		{
 			int lntext = strlen(text_content);
 
-			write(nf, text_content, lntext);
+			write(nfa, text_content, lntext);
 		}
 	}
 
