@@ -25,5 +25,6 @@ int append_text_to_file(const char *filename, char *text_content)
 			write(nf, text_content, lntext);
 		}
 	}
+	
 	return (1);
 }
