@@ -1,5 +1,8 @@
 #include "main.h"
 
+/*
+ * Auth: kanths kanths
+ */
 void check_elf(unsigned char *e_ident);
 void print_magic(unsigned char *e_ident);
 void print_class(unsigned char *e_ident);
