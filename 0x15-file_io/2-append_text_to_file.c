@@ -12,15 +12,18 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	nf = open(filename, O_RDWR | O_APPEND);
 
-	if (nf == -1)
+	if(nf == -1)
+	{
 		return (-1);
+	}
 	else
-		if (text_content != NULL)
+	{
+		if(text_content != NULL)
 		{
 			int lntext = strlen(text_content);
 
 			write(nf, text_content, lntext);
 		}
-
+	}
 	return (1);
 }
