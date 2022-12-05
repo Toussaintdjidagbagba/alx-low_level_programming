@@ -23,9 +23,9 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		if (text_content != NULL)
 		{
-			int strln = strlen(text_content);
+			int ln = strlen(text_content);
 
-			write(nf, text_content, strln);
+			write(nf, text_content, ln);
 		}
 	}
 
