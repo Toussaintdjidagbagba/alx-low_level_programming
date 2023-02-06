@@ -9,7 +9,7 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned int i = 0;
 	hash_node_t *curr = NULL;
-	_Bool first = true;
+	bool first = true;
 
 	if (!ht)
 		return;
