@@ -199,10 +199,10 @@ void shash_table_print_rev(const shash_table_t *ht)
  * @ht: input hash table
  * @in_order: flag to print in forward or reverse
  */
-void print_in_order(const shash_table_t *ht, _Bool in_order)
+void print_in_order(const shash_table_t *ht, bool in_order)
 {
 	shash_node_t *start;
-	_Bool first = true;
+	bool first = true;
 
 	start = in_order
 		? ht->shead
